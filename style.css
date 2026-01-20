@@ -1,0 +1,138 @@
+:root {
+    --primary: #690000;
+    --primary-dark: #4a0000;
+    --light: #f8fafc;
+    --dark: #1e293b;
+    --gray: #64748b;
+    --radius: 8px;
+    --shadow: 0 10px 15px rgba(0,0,0,0.1);
+    --transition: 0.3s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    background: var(--light);
+    color: var(--dark);
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    background: white;
+    box-shadow: var(--shadow);
+    padding: 1rem 0;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .logo span {
+    color: var(--primary);
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-link {
+    margin-left: 1.5rem;
+    color: var(--dark);
+  }
+  
+  .hero {
+    padding: 9rem 0 5rem;
+  }
+  
+  .hero-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-subtitle {
+    color: var(--gray);
+  }
+  
+  .hero-image img {
+    border-radius: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 10px 25px;
+    border-radius: var(--radius);
+    margin-top: 1rem;
+  }
+  
+  .btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+  }
+  
+  .section {
+    padding: 4rem 0;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .skills span {
+    background: #e2e8f0;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 5px;
+    display: inline-block;
+  }
+  
+  .projects-grid,
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 2rem;
+  }
+  
+  .project-card,
+  .service-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+  
+  footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
